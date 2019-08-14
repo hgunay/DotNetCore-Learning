@@ -6,7 +6,7 @@
 indirilmelidir.
 
 ## **Komut Satırı (Command Prompt) İşlemleri**
-1. **dotnet** Komutunun Kullanımı
+### **dotnet** Komutunun Kullanımı
 1.1. `dotnet` komutu bu komutun nasıl kullanılabileceğine ilişkin bilgileri verir.
 ![command-dotnet](https://user-images.githubusercontent.com/19264860/63030381-e2d03080-beba-11e9-84e4-e0446c30cc25.png) <br/>
 1.2. `dotnet --info` komutu yüklü olan .NET Core versiyonunu gösterir.
