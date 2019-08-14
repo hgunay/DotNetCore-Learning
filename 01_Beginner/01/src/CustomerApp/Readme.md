@@ -1,7 +1,8 @@
-Program.cs içerisinde yer alan aşağıdaki kod satırını
+Program.cs içerisinde yer alan  
 ``` csharp
     Console.WriteLine("Hello World!");
 ```
+kod satırını
 ``` csharp
     Console.WriteLine("Hello Developer!");
 ```
