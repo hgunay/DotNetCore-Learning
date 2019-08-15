@@ -7,3 +7,8 @@ kod satırını
     Console.WriteLine("Hello Developer!");
 ```
 olarak güncelliyoruz.
+
+Yaptığımız değişikliği görebilmek için command prompt'ta çalıştırıyoruz.
+```
+   dotnet run 
+```
