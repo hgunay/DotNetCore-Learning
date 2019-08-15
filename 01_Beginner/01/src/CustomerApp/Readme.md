@@ -10,5 +10,5 @@ olarak güncelliyoruz.
 
 Yaptığımız değişikliği görebilmek için command prompt'ta çalıştırıyoruz.
 ```
-   dotnet run 
+   > dotnet run 
 ```
