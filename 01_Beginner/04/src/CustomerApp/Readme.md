@@ -24,7 +24,7 @@ Elimizde bir müşteri portföyümüz olduğunu var sayalım. Müşteri ile ilgi
 
 Bu bilgileri geliştirmekte olduğumuz proje içerisinde defalarca kullanacağımızı düşünürsek her seferinde bu bilgilere ulaşmamız ya da güncellememiz gereken durumlar olacaktır. Class'lar tam olarak bu noktada devreye girerek bu bilgiler ile ilişkili metodları tekrar tekrar yazmak yerine bir class içerisinde tanımlayarak hem kod kalitesini hem okunabilirliği hem de geliştirme sürecini kolaylaştırır.
 
-### Class Tanımlama
+## Class Tanımlama
 
 Bir class tanımlanırken aşağıdaki formatta olduğu şekilde tanımlanmalıdır;
 
@@ -43,7 +43,7 @@ public class Customer {
 5. <strong>protected internal</strong> : Tanımlı olduğu proje ya da başka bir projede türetilmiş bir sınıftan erişilebilir.
 6. <strong>private protected</strong> : Sadece tanımlı olduğu projede aynı class içerisinden ya da bu sınıftan türetilmiş başka bir sınıftan erişilebilir.
 
-### Class Oluşturma
+## Class Oluşturma<a name="create-class"></a>
 
 Bir class oluştururken bu class'ı isterseniz yazdığınız kod dosyası içerisinde (bizim için burada Program.cs dosyası) ya da farklı bir dosya içerisinde oluşturabilirsiniz. Aşağıdaki ekran görüntüsünde olduğu gibi VS Explorer'da sağ tıkladığımız zaman açılan menüde yer alan <strong>New C# Class</strong>'a tıklıyoruz.
 
@@ -72,7 +72,7 @@ Customer class'ımıza property'leri ve basit bir method'u ekledikten sonra tekr
 
 ![list-class](https://user-images.githubusercontent.com/19264860/66659003-47a1d000-ec4b-11e9-9fc8-65bbbd293b21.png)
 
-### Constructor (Yapıcı Metod) Ekleme
+## Constructor (Yapıcı Metod) Ekleme
 
 - Constructor bir class oluşturulduğu zaman çağırılan ilk metod'dur.
 - Herhangi bir değer dönmezler ve public'tir.
@@ -102,7 +102,7 @@ public Customer(int customerId)
 
 Parametreli constructor kullanımını yeni bir service class'ı yazarak inceleyelim.
 
-1. Customer class'ımızı ilk oluştururken izlediğimiz [adımları](### Class Oluşturma) izliyoruz ve <strong>CustomerService</strong> adında bir class oluşturuyoruz. Bu service içerisinde bizim <strong>CRUD (Create-Read-Update-Delete)</strong> işlemlerini yapacağımız method'lar yer alacak. Bu service class'ımıza bir <strong>Read</strong> method'u ekleyelim;
+1. Customer class'ımızı ilk oluştururken izlediğimiz adımları izliyoruz ve <strong>CustomerService</strong> adında bir class oluşturuyoruz. Bu service içerisinde bizim <strong>CRUD (Create-Read-Update-Delete)</strong> işlemlerini yapacağımız method'lar yer alacak. Bu service class'ımıza bir <strong>Read</strong> method'u ekleyelim;
 
 ``` csharp
 public Customer GetCustomerById(int id)
