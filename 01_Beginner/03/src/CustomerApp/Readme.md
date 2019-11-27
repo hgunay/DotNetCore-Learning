@@ -105,7 +105,9 @@ Bool Değeri : False
 
 Diziler, aynı veri türündeki öğelerin sabit boyutlu bir kolleksiyonunu saklamak için kullanılırlar. Yazdığımız kod içerisinde aynı türde birden fazla değişken tanımlamak yerine (number1, number2, number3 ...) bunları bir dizi içerisinde tanımlayabiliriz (<strong>NumberList[]</strong>).
 
-<img src="https://user-images.githubusercontent.com/19264860/66142567-561a3700-e60e-11e9-905a-b462117c5f66.png" data-canonical-src="https://user-images.githubusercontent.com/19264860/66142567-561a3700-e60e-11e9-905a-b462117c5f66.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
+<p align="center">
+<img src="https://user-images.githubusercontent.com/19264860/69482746-5a094f00-0e30-11ea-8df8-f85769fc2459.png" data-canonical-src="https://user-images.githubusercontent.com/19264860/69482746-5a094f00-0e30-11ea-8df8-f85769fc2459.png" width="60%" />
+</p>
 
 Array'lerin index'leri 0'dan başlar ve 1'er tanımlı olan boyutu kadar artarak devam eder.
 
