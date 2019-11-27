@@ -9,6 +9,8 @@ namespace CustomerApp
             var customerService = new CustomerService();
             var customerData = customerService.GetCustomerById(1);
 
+            #region Statements
+                
             // if statement
             if(customerData == null)
             {
@@ -89,6 +91,91 @@ namespace CustomerApp
                     Console.WriteLine("May the Force be with you.");
                 break;
             }
+
+            #endregion
+
+            #region Loops
+            
+            // for loop
+            for (var i = 1; i <= 3; i++)
+            {
+                Console.WriteLine($"for : {i}. {customerData.FullName()}");
+            }
+
+            // while loop
+            var j = 1;
+            while (j <= 3)
+            {
+                Console.WriteLine($"while : {j}. {customerData.FullName()}");
+                j++;
+            }
+
+            // do...while loop
+            var x = 1;
+            do
+            {
+                Console.WriteLine($"do-while : {x}. {customerData.FullName()}");
+                x++;
+            } while (x <= 3);
+
+            // foreach loop
+            var list = new int[]{ 1, 2, 3 };
+            foreach (var item in list)
+            {
+                Console.WriteLine($"foreach : {item}. {customerData.FullName()}");
+            }            
+
+            #endregion
+			
+			#region Jumping Statements
+            
+            // break
+            var movieTypeList = new string[]{ "dram", "action", "sci-fi", "romance" };
+            foreach (var item in movieTypeList)
+            {
+                if(item == "sci-fi")
+                {
+                    Console.WriteLine($"Movie Type : {item}");
+                    break;
+                }
+
+                Console.WriteLine($"Movie Type : {item}");
+            }
+
+            // continue
+            movieTypeList = new string[]{ "dram", "action", "romance", "sci-fi" };
+            foreach (var item in movieTypeList)
+            {
+                if(item == "romance")
+                {
+                    continue;
+                }
+
+                Console.WriteLine($"Movie Type : {item}");
+            }
+
+            // goto
+            movieTypeList = new string[]{ "dram", "action", "romance", "sci-fi" };
+            foreach (var item in movieTypeList)
+            {
+                switch (item)
+                {
+                    case "dram":
+                        goto default;
+                    case "action":
+                        goto default;
+                    case "romance":
+                        goto default;
+                    case "sci-fi":
+                        Console.WriteLine($"Movie type is Sci-Fi");
+                        break;
+                    default:
+                        Console.WriteLine($"Movie type is...");
+                        break;
+                }
+            }
+
+            #endregion            
         }
     }
 }
